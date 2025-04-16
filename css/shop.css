@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Ensures vertical alignment */
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    padding: 15px 5%;
+    z-index: 10;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+    display: block; /* Prevents unwanted spacing */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-links li {
+    display: inline;
+    border-bottom: 1px solid black;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: gray;
+}
+
+/* User Icon */
+.user-icon img {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.user-icon img:hover {
+    opacity: 0.7;
+}
+
+.bod {
+    padding-top: 80px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #ffffff;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+td {
+    width: 25%;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: top;
+    padding: 15px;
+}
+.product-card {
+    background: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    box-sizing: border-box;
+}
+.product-image {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+}
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: black;
+    color: white;
+    padding: 5px 10px;
+    font-size: 15px;
+}
+.product-info h3, .product-info p {
+    margin: 5px 0;
+}
+.product-price {
+    font-weight: bold;
+}
+
+
+
+/* Remove borders for empty table cells */
+td.empty-cell {
+    border: none;
+}
+
+.footer {
+    height: 300px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.footer-logo img {
+    width: 250px;
+    height: auto;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.footer-section a {
+    padding-top: 10px;
+    color: black;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+}
+
+
+
+
+/* Grayscale effect for out-of-stock products */
+.sold-out {
+    filter: grayscale(100%);
+    opacity: 0.6;
+}
+
+/* Styling for "Buy Now" Button */
+.buy-now {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.buy-now:hover {
+    background-color: gray;
+}
+
+/* Styling for "Out of Stock" Button */
+.out-of-stock-btn {
+    background: transparent !important;
+    color: red !important;
+    font-weight: bold;
+    border: 1px solid red !important;
+    cursor: default;
+}
+
+.out-of-stock-btn:hover {
+    background: transparent !important;
+}
