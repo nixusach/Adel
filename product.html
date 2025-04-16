@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="Brand Logo">
+            </div>            
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Products</a></li>
+            </ul>
+        </nav>
+    </header> 
+
+    <div class="product-container">
+        <div class="product-gallery">
+            <button class="prev-btn">&#10094;</button>
+            <div class="main-image">
+                <img id="product-image" src="images/1.jpg" alt="Product Image">
+            </div>
+            <button class="next-btn">&#10095;</button>
+        </div>
+
+        <div class="product-details">
+            <h1 id="product-name">Sneakers XYZ</h1>
+            <p class="price" id="product-price">4500 DA</p>
+
+            <form id="order-form">
+                <div id="selection-container">
+                    <div class="selection-row">
+                        <label>Color:</label>
+                        <select id="color-select" name="color">
+                            <option value="Red">Red</option>
+                            <option value="Black">Black</option>
+                            <option value="White">White</option>
+                        </select>
+
+                        <label>Size:</label>
+                        <select id="size-select" name="size">
+                            <option value="40">40</option>
+                            <option value="41">41</option>
+                            <option value="42">42</option>
+                            <option value="43">43</option>
+                        </select>
+
+                        <label>Quantity:</label>
+                        <input type="number" name="quantity" value="1" min="1">
+                    </div>
+                </div>
+
+                <div class="add-another">
+                    <span class="plus-icon">+</span>
+                    <button type="button" id="add-more">Add Another</button>
+                </div>
+
+                <div class="form-row">
+                    <label>Full Name:</label>
+                    <input type="text" name="full_name" required>
+                </div>
+
+                <div class="form-row">
+                    <label>Telephone Number:</label>
+                    <input type="tel" name="phone" pattern="[0-9]{10}" maxlength="10" required>
+                </div>
+
+                <div class="form-row">
+                    <label>Address:</label>
+                    <textarea name="address" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Order</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="product.js"></script>
+</body>
+</html>
