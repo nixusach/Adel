@@ -1,88 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fashion Hero Section</title>
-    <link rel="stylesheet" href="css/index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>W&H | Produits dentaires</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="images/logo.png" alt="Brand Logo">
-            </div>            
-            <ul class="nav-links">
-                <li><a href="/">Home</a></li>
-                <li><a href="shop.html">Products</a></li>
-                <li><a href="my-web-products.html">My Products</a></li>
-            </ul>
-            <a href="login.html" class="user-icon">
-                <img src="images/user-icon.png" alt="User">
-            </a>
-        </nav>
-    </header>    
 
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Think Different.</h1>
-            <p>We believe that every human deserves to feel beautiful and confident, and we are committed to providing you with the best quality and styles that will make you look and feel your best.</p>
-            <a href="shop.html" class="btn">View Our Products</a>
-        </div>
-    </section>
+  <header class="top-bar">
+    <div class="logo">W&H</div>
+    <div class="top-icons">
+      <button class="icon">$</button>
+      <button class="icon">🔍</button>
+      <button class="icon">&#9776;</button>
+    </div>
+  </header>
 
-    <section class="marquee-section">
-        <div class="marquee">
-            <div class="marquee-content">
-                <span>HIGH QUALITY COTTON &nbsp; ● &nbsp; MONEY BACK GUARANTEE &nbsp; ● &nbsp; 24/7 SUPPORT &nbsp; ● &nbsp; AVAILABLE DELIVERY &nbsp; ● &nbsp; HIGH QUALITY COTTON &nbsp; ● &nbsp; MONEY BACK GUARANTEE &nbsp; ● &nbsp; 24/7 SUPPORT &nbsp; ● &nbsp; AVAILABLE DELIVERY &nbsp; ● &nbsp;</span>
-            </div>
-        </div>
-    </section>
-    
-    <section>
-        <div class="title-section">
-            <h2 class="title-main">Some of the cloth from <br> our new <em>winter</em> collection</h2>
-        </div>
-        
-        <div class="product-section"> 
-            <!-- Product Grid -->
-            <div class="product-container">
-                <!-- Products will be dynamically loaded here -->
-            </div>
-    
-            <!-- View All Products Button -->
-            <div class="view-all-wrapper">
-                <a href="shop.html" class="view-all-btn">View All Products >></a>
-            </div>
-        </div>
-    </section>
-    
-    <section class="parallax-section">
-        <div class="parallax-background"></div>
-        <div class="content-wrapper">
-            <img src="images/ho1.jpg" alt="Bag Collection" class="right-image">
-            <div class="text-block">
-                <p class="explore-text">Explore our exquisite Bag <br> Collection now!</p>
-                <a href="#" class="shop-btn">View Collection</a>
-            </div>
-        </div>
-    </section>
-    
-    <footer class="footer">
-        <div class="footer-logo">
-            <img src="images/logo.png" alt="Logo">
-        </div>
-        <div class="footer-section">
-            <h3>Our Pages</h3>
-            <a href="index.html">Home</a>
-            <a href="shop.html">Products</a>
-        </div>
-        <div class="footer-section">
-            <h3>Contact Us</h3>
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-        </div>
-    </footer>    
-    <script src="index.js"></script>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="new-tag">NOUVEAU</div>
+    <img src="1.jpg" alt="Laveur désinfecteur Thed" class="hero-image">
+    <div class="hero-text">
+      <h1>Faites un vœu !</h1>
+      <p>Découvrez les nouveaux laveurs désinfecteurs Thed et Thed +</p>
+      <button>Découvrir</button>
+    </div>
+    <div class="dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="categories">
+    <h2>W&H | Produits dentaires pour la dentisterie</h2>
+    <ul>
+      <li><img src="2.jpg" alt="Produits"><span>Restauration & Soins prothétiques</span></li>
+      <li><span>Entretien, Stérilisation & Hygiène</span></li>
+      <li><span>Chirurgie orale & Implantologie</span></li>
+      <li><span>Prophylaxie & Parodontologie</span></li>
+      <li><span>Endodontie</span></li>
+      <li><span>Laboratoire</span></li>
+    </ul>
+  </section>
+
+  <!-- Products -->
+  <section class="products">
+    <div class="product">
+      <div class="label">nouveau</div>
+      <img src="3.jpg" alt="Lisa Mini">
+      <h3>Lisa Mini</h3>
+      <p>Le petit et rapide stérilisateur de type B</p>
+    </div>
+    <div class="product">
+      <img src="4.jpg" alt="Stephyg">
+      <h3>Stephyg</h3>
+      <p>Quelle gamme en fait le + pour l'hygiène de tout votre cabinet ?</p>
+    </div>
+    <div class="product">
+      <div class="label">nouveau</div>
+      <img src="5.jpg" alt="Synea Power Edition">
+      <h3>Synea Power Edition</h3>
+    </div>
+  </section>
+
 </body>
 </html>
